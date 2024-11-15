@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Music Player</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  
+  <div class="music-player">
+    <div class="player-header">
+      <h2>Online Music Player</h2>
+    </div>
+
+   
+    <div class="song-list">
+      <h3>Available Songs</h3>
+      <ul>
+        <li class="song-item" data-song="song1.mp3">Song 1 - Chuttamalle Chuttesthandhi</li>
+        <li class="song-item" data-song="song2.mp3">Song 2 - Nanna Nuv Na Pranam</li>
+        <li class="song-item" data-song="song3.mp3">Song 3 - Bachelor BGM</li>
+        <li class="song-item" data-song="song4.mp3">Song 4 - Ammayi Ammayi</li>
+        <li class="song-item" data-song="song5.mp3">Song 5 - Short Film BGM</li>
+        <li class="song-item" data-song="song6.mp3">Song 6 - Devara Fear</li>
+        <li class="song-item" data-song="song7.mp3">Song 7 - Yennai Matrum Kadhale</li>
+        <li class="song-item" data-song="song8.mp3">Song 8 - Vaalu Kanuladhana</li>
+        <li class="song-item" data-song="song9.mp3">Song 9 - Aayudha Pooja</li>
+        <li class="song-item" data-song="song10.mp3">Song 10 - Kannodu Kanbathellam</li>
+      </ul>
+    </div>
+
+  
+    <div class="now-playing">
+      <p>Now Playing: <span id="current-song">None</span></p>
+      <audio id="audio-player" controls>
+        <source id="audio-source" src="" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+   
+    <div class="player-controls">
+      <button id="prev-btn">⏪</button>
+      <button id="play-pause-btn">▶</button>
+      <button id="next-btn">⏩</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
